@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+:root {
+    --blus: #2881DD;
+    --blacks: #1A1A1A;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 22.5px auto;
+    height: 500px;
+    background: #b3d4fc;
+}
+
+.header {
+    max-width: 1173px;
+    margin: 0 auto 45px auto;
+}
+
+.info {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.25);
+}
+
+.mail img, .number img {
+    margin-right: 14px;
+}
+
+.mail-adr {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.mail-gmail {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.mail-gmail a, .number-tel a, span {
+    color: var(--blus);
+    font-weight: 600;
+}
+
+.number-tel {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.number-time {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.header-but {
+    font-weight: 700;
+    font-size: 20px;
+    background: var(--blus);
+    box-shadow: 1px 4px 5px rgba(40, 129, 221, 0.35);
+    border-radius: 10px;
+    width: 222px;
+    height: 48px;
+    color: #fff;
+}
+
+nav {
+    padding: 19px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    font-size: 16px;
+    color: var(--blacks);
+}
