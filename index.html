@@ -8,6 +8,10 @@
     <title>Астимед</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slinky.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slinky.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -37,10 +41,18 @@
             </div>
             <button class="header-but">Заказать звонок</button>
         </div>
-        <nav>
+        <div class="js-menu">
             <ul>
                 <li><a href="">Главная</a></li>
-                <li><a href="">Прием в клинике</a></li>
+                <li><a href="">Прием в клинике</a>
+                    <ul>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Вызов на дом</a></li>
                 <li><a href="">COVID - 19</a></li>
                 <li><a href="">Эпиляция и массаж</a></li>
@@ -51,7 +63,14 @@
             <div class="icons">
 
             </div>
-        </nav>
+        </div>
     </div>
+
+
+    <script>
+        var slinky = $('.js-menu').slinky({
+            title: true
+        });
+    </script>
 </body>
 </html>

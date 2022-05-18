@@ -58,7 +58,7 @@ button {
     align-items: center;
 }
 
-.mail-gmail a, .number-tel a, span {
+.mail-gmail a, .number-tel a, .number-time span {
     color: var(--blus);
     font-weight: 600;
 }
@@ -87,17 +87,3 @@ button {
     color: #fff;
 }
 
-nav {
-    padding: 19px 0;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li a {
-    font-size: 16px;
-    color: var(--blacks);
-}
