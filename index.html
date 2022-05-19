@@ -8,14 +8,16 @@
     <title>Астимед</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/slinky.min.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/slinky.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<div class="overlay"></div>
     <div class="header">
         <div class="info">
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+            </button>
             <div class="logo">
                 <img src="img/svg/logo.svg" width="222" alt="Астимед">
             </div>
@@ -41,36 +43,50 @@
             </div>
             <button class="header-but">Заказать звонок</button>
         </div>
-        <div class="js-menu">
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Прием в клинике</a>
-                    <ul>
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
+        <nav class="nav header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-drop">Прием в клинике</a>
+                    <ul class="nav-list nav-list-dropdown dropdown-list">
+                        <li class="dropdown-list-item mobile-back"><a href="" class="dropdown-list-link mobile-back-link">Назад</a></li>
+                        <li class="dropdown-list-item"><a href="/terapevt.html" class="dropdown-list-link">Терапевт</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Невролог</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Гинеколог</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">УЗИ</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Рефлексотерапевт</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Манипуляции</a></li>
                     </ul>
                 </li>
-                <li><a href="">Вызов на дом</a></li>
-                <li><a href="">COVID - 19</a></li>
-                <li><a href="">Эпиляция и массаж</a></li>
-                <li><a href="">Акции</a></li>
-                <li><a href="">Цены</a></li>
-                <li><a href="">Контакты</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-drop">Вызов на дом</a>
+                    <ul class="nav-list nav-list-dropdown dropdown-list">
+                        <li class="dropdown-list-item mobile-back"><a href="" class="dropdown-list-link mobile-back-link">Назад</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Терапевт</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Невролог</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Гинеколог</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">УЗИ</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Рефлексотерапевт</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Манипуляции</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">СМАД</a></li>
+                        <li class="dropdown-list-item"><a href="" class="dropdown-list-link">Холтер</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">COVID - 19</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Эпиляция и массаж</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
             </ul>
-            <div class="icons">
-
+            <div class="icon">
+                <a class="pl" id="specialButton" href="#"><i class="far fa-eye fa-2x dark"></i></a>
+                <a class="pl" target="_blank" href="https://wa.me/+78129834239"><i class="fab fa-whatsapp fa-2x dark"></i></a>
+                <a class="pl" target="_blank" href="https://t.me/AstimedSpb"><i class="fab fa-telegram fa-2x dark"></i></a>
+                <a class="pl" target="_blank" href="https://www.google.ru/maps/place/АстиМед/@59.994553,30.194802,17z/data=!3m1!4b1!4m5!3m4!1s0x469637cc9e3b2aa9:0x2cd9efe0640e4c27!8m2!3d59.994553!4d30.1969907"><i class="fas fa-map-marked-alt fa-2x dark"></i></a>
             </div>
-        </div>
+        </nav>
     </div>
 
-
-    <script>
-        var slinky = $('.js-menu').slinky({
-            title: true
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
