@@ -23,14 +23,13 @@ button {
 
 .container {
     max-width: 1280px;
-    margin: 22.5px auto;
-    height: 500px;
-    background: #b3d4fc;
+    margin: 22px auto;
 }
 
 .header {
     max-width: 1173px;
     margin: 0 auto 45px auto;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.25);
 }
 
 .info {
@@ -87,3 +86,165 @@ button {
     color: #fff;
 }
 
+.dropdown-list {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    width: 76%;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: var(--blacks);
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.pl {
+    color: #929292;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 38px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "heads but"
+        "heads but2";
+}
+
+.heads {
+    grid-area: heads;
+    background-image: url(../img/head.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    padding: 80px 0 0 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px!important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #505050 !important;
+}
+
+.but {
+    display: flex;
+    grid-area: but;
+    background: #F3A125;
+    position: relative;
+
+
+}
+
+.but,
+.but2 {
+    color: #fff !Important;
+    padding-left: 32px;
+    font-weight: 700;
+    font-size: 34px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.but2 {
+    display: flex;
+    grid-area: but2;
+    background: #07D27D;
+    position: relative;
+}
+
+.heads:hover,
+.but:hover,
+.but2:hover {
+    box-shadow: none;
+    transition: all .4s;
+}
+
+.grid > * {
+    border-radius: 10px;
+    color: #000;
+    font-size: 30px;
+}
+
+.vector {
+    position: absolute;
+    width: 80px;
+    right: 25px;
+    bottom: .1px;
+}
+
+.uslugi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.uslugi > a {
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    transition: all .5s;
+}
+.covid {
+    height: 215px;
+    background: linear-gradient(135deg, #EF5353 52.79%, #EF9191 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.inec {
+    height: 215px;
+    background: linear-gradient(135deg, #537FD6 52.79%, #80A4EA 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.ginec {
+    height: 215px;
+    background: linear-gradient(135deg, #F36AC5 52.79%, #F09FD5 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.nerv {
+    height: 215px;
+    background: linear-gradient(135deg, #777B8A 52.79%, #989DAE 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.uzi {
+    height: 215px;
+    background: linear-gradient(135deg, #72D3C8 52.79%, #ABEBE4 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+.vector2 {
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+}
+.uslugi > a:hover {
+    box-shadow: none;
+}
